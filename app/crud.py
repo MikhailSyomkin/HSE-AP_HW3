@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from app.models import Link
 from app.services.shortener import generate_short_code
 from datetime import datetime
+from models import Link
 
 def create_link(db: Session, original_url: str, custom_alias: str = None, expires_at: datetime = None):
     short_code = generate_short_code()

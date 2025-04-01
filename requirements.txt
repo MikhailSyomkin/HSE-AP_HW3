@@ -3,3 +3,5 @@ fastapi
 psycorb2-binary
 python-dotenv
 sqlalchemy
+jose
+
